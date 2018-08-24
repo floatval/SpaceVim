@@ -162,8 +162,28 @@ Further paragraphs come after blank lines.
 
     - Typically a hyphen or asterisk is used for the bullet, followed by a
       single space, with blank lines in between, but conventions vary here
-
+    
     - Use a hanging indent
+
+大写的,简短摘要(小于等于72个字符)
+
+如需要的话,提供详细的说明文字. 同样需要保持小于等于72个字符.
+在某些语境中采用邮件的格式: 第一行作为邮件头,其余内容为邮件内容.
+在邮件头和内容之间采用空白行进行分割(除非是你完全忽略了内容); 
+像 rebase 类的工具,如果你把他和正常提交混用的话,会非常的混乱.
+
+以祈使句来组织你的提交信息: "修复 bug" 不要使用 "Fixed bug" 和 "Fiexs bug."
+ps: 国语没这个问题
+此约定与通过使用 git merge 和 git revert 命令生成的信息匹配.
+
+在空行后多层次的段落.
+
+- 圆点也可以
+
+    - 使用 - 开头经渲染后的列表就是以原点开头的. - 和内容之间要留一个空格.
+      内容间要有空行.这两者的约定是不同的.
+      
+    - 使用空行和缩进
 ```
 
 [Gita] provide vim mode for Git commit messages, which helps you to comply to these guidelines.
@@ -296,14 +316,15 @@ If you are contributing to an already existing layer, you should not modify any 
 
 #### Contributing a banner
 
-The startup banner is by default the SpaceVim logo but there are also ASCII banners available in the core/banner layer.
+默认的开启标题是 SpaceVim 的 logo, 但是其也可以从 /core/banner 层中获取.
 
-If you have some ASCII skills you can submit your artwork!
+如果你有自己满意的 ASCII 技巧的话, 你可以提交你的作品上来.
 
-You are free to choose a reasonable height size but the width size should be around 75 characters.
+你可以选择任意长度但是宽度要在 75 字符以内.
 
 ## Build with SpaceVim
 
+SpaceVim 提供了非常多的 [APIs](../api/), 你可以基于他们编写自己的插件,并且你可以在你的 READEME.md 中添加自己的标志.
 SpaceVim provide a lot of public [APIs](../api/), you can create plugins base on this APIs. also you can add a badge to the README.md of your plugin.
 
 ![](https://img.shields.io/badge/build%20with-SpaceVim-ff69b4.svg)

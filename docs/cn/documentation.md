@@ -591,36 +591,35 @@ SpaceVim 选项 `window_leader` 的值来设为其他按键：
 SpaceVim has mapped normal `q` as smart buffer close, the normal func of `q`
 can be get by `<leader> q r`
 
-| Key                   |      Mode     | Action                                                                         |
+SpaceVim 重新映射了 `q` 键,将其作为智能关闭缓冲区,
+可以通过 `<leader> q r` 来重置 q 为 vim 默认的行为.
+
+| 快捷键                 |      模式      | 作用                                                                         |
 | --------------------- | :-----------: | ------------------------------------------------------------------------------ |
-| `<leader>`+`y`        |     visual    | Copy selection to X11 clipboard ("+y)                                          |
-| `Ctrl`+`c`            |     Normal    | Copy full path of current buffer to X11 clipboard                              |
-| `<leader>`+`Ctrl`+`c` |     Normal    | Copy github.com url of current buffer to X11 clipboard(if it is a github repo) |
-| `<leader>`+`Ctrl`+`l` | Normal/visual | Copy github.com url of current lines to X11 clipboard(if it is a github repo)  |
-| `<leader>`+`p`        | Normal/visual | Paste selection from X11 clipboard ("+p)                                       |
-| `Ctrl`+`f`            |     Normal    | Smart page forward (C-f/C-d)                                                   |
-| `Ctrl`+`b`            |     Normal    | Smart page backwards (C-b/C-u)                                                 |
-| `Ctrl`+`e`            |     Normal    | Smart scroll down (3C-e/j)                                                     |
-| `Ctrl`+`y`            |     Normal    | Smart scroll up (3C-y/k)                                                       |
-| `Ctrl`+`q`            |     Normal    | `Ctrl`+`w`                                                                     |
-| `Ctrl`+`x`            |     Normal    | Switch buffer and placement                                                    |
-| `Up,Down`             |     Normal    | Smart up and down                                                              |
-| `}`                   |     Normal    | After paragraph motion go to first non-blank char (}^)                         |
-| `<`                   | Visual/Normal | Indent to left and re-select                                                   |
-| `>`                   | Visual/Normal | Indent to right and re-select                                                  |
-| `Tab`                 |     Visual    | Indent to right and re-select                                                  |
-| `Shift`+`Tab`         |     Visual    | Indent to left and re-select                                                   |
-| `gp`                  |     Normal    | Select last paste                                                              |
-| `Q`/`gQ`              |     Normal    | Disable EX-mode (<Nop>)                                                        |
-| `Ctrl`+`a`            |    Command    | Navigation in command line                                                     |
-| `Ctrl`+`b`            |    Command    | Move cursor backward in command line                                           |
-| `Ctrl`+`f`            |    Command    | Move cursor forward in command line                                            |
+| `<leader>`+`y`        |     可视模式   | 将选中部分拷贝到 X11 的剪贴板("+y)                                                |
+| `Ctrl`+`c`            |     普通模式   | 将当前缓冲区的完整路径拷贝到 X11 的剪贴板.                                          |
+| `<leader>`+`Ctrl`+`c` |     普通模式    | 拷贝当前缓冲区的 github 地址到 X11 剪贴板(若其是 git 的仓库的话).                   |
+| `<leader>`+`Ctrl`+`l` | 普通模式/可视模式 | 拷贝当前缓冲区的 github 地址到 X11 剪贴板(若其是 git 的仓库的话).                  |
+| `<leader>`+`p`        | 普通模式/可视模式 | 将 X11 剪贴板上的内容粘贴下来. ("+p)                                            |
+| `Ctrl`+`f`            |     普通模式    | 快速向前翻页 (C-f/C-d)                                                 |
+| `Ctrl`+`b`            |     普通模式    | 快速向后翻页 (C-b/C-u)                                               |
+| `Ctrl`+`e`            |     普通模式    | 快速滚动到底部 (3C-e/j)                                                   |
+| `Ctrl`+`y`            |     普通模式    | 快速滚动到顶部 (3C-y/k)                                                     |
+| `Ctrl`+`q`            |     普通模式    | `Ctrl`+`w`                                                                     |
+| `Ctrl`+`x`            |     普通模式    | 切换缓冲区和位置                                                    |
+| `Up,Down`             |     普通模式    | 快速上滚和下滚                                                              |
+| `}`                   |     普通模式    | 跳转到当前段落之后的第一个字符 (}^)                         |
+| `<`                   | 可视模式/普通模式 | 向左缩进然后重新选择                                                  |
+| `>`                   | 可视模式/普通模式 | 向右缩进然后重新选择                                                 |
+| `Tab`                 |     可视模式    | 向右缩进然后重新选择                                                  |
+| `Shift`+`Tab`         |     可视模式    | 向左缩进然后重新选择                                                   |
+| `gp`                  |     普通模式    | 选中从当前位置到上一次粘贴内容的位置之间的所有内容                                                              |
+| `Q`/`gQ`              |     普通模式    | 关闭 EX-mode (<Nop>)                                                        |
+| `Ctrl`+`a`            |    命令        | 导航向命令行                                                    |
+| `Ctrl`+`b`            |    命令        | 在命令行中向后移动光标                                           |
+| `Ctrl`+`f`            |    命令        | 在命令行中向前移动光标                                           |
 
-### File Operations
-
-| Key             |          Mode         | Action                                     |
-| --------------- | :-------------------: | ------------------------------------------ |
-| `<leader>`+`cd` |         Normal        | Switch to the directory of the open buffer |
+### File Operations | Key             |          Mode         | Action                                     | | --------------- | :-------------------: | ------------------------------------------ | | `<leader>`+`cd` |         Normal        | Switch to the directory of the open buffer |
 | `<leader>`+`w`  |     Normal/visual     | Write (:w)                                 |
 | `Ctrl`+`s`      | Normal/visual/Command | Write (:w)                                 |
 | `:w!!`          |        Command        | Write as root (%!sudo tee > /dev/null %)   |

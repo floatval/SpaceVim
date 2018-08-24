@@ -29,11 +29,11 @@ description: "这一模块为 lisp 开发提供支持，包括代码补全、语
 
 ## 环境依赖
 
-- Vim 8.0+ with +channel, or Neovim 0.2.0+ with ncat
+- Vim 8.0+ 且编译了 +channel, 或则 Neovim0,2.0+ 编译了ncat
 - ASDF
 - Quicklisp
-- An Internet connection to install other dependencies from Quicklisp
+- 一个用来从 Quicklisp 中安装其他依赖的正常网络连接
 
 ## 快捷键
 
-all the language special mappings is begin with `[SPC] l`, please checkout it in mapping guide.
+所有语言的特定快捷键都是以 `[SPC]` 开始的,详情请参阅按键引导.
